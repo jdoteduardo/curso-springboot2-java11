@@ -9,6 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -16,6 +17,7 @@ import com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatTypes;
 import com.joseeduardo31.course.entities.enums.PedidoStatus;
 
 @Entity
+@Table(name = "tb_pedido")
 public class Pedido implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
